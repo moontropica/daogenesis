@@ -7,7 +7,7 @@ Total Proposed Seats: 69
 <br>
 Reserved Seats by `owner`: 8
 
-DAO Members will be customized characters to reflect their image in-game and be able to cast votes on behalf of their following.
+DAO Members will be customized characters to reflect their real image in-game and be able to cast votes on behalf of their community.
 
 # Smart Contract Archetecture
 To obtain a seat, a member has to be granted a referral from the wallet address `HGEqpS1rRaBEPoRF9qqqkSapfQrUeU2Dr8XDtUVDMf5a`
@@ -22,13 +22,14 @@ To obtain a seat, a member has to be granted a referral from the wallet address 
 |69|`BUbpvUFZTxxQBB5gYYkH1pps1CMtKj4vLnBwMPo1ZcZe`|0|
 
 ## Write Functions
-|function|vars   |type  |
+|function|vars   |desc  |
 |--------|-------|------|
-|`setOwner`|account(*address*), refAmt(*uint*)|To be set immedately or during deployment. Sets the `owner` of the contract, this will be the first DAO member and added to the `daoList` array.|
-|`addDAO`|account(*address*), refAmt(*uint*)|Can only be called by `owner` of contract or wallet in `daoList` array with `refAmt > 0`, if `refAmt =< 0` throw exception|
+|`setOwner`|account(*address*)|To be set immedately or during deployment. Sets the `owner` of the contract.|
+|`addDAO`|account(*address*), refAmt(*uint*)|Can only be called by `owner` of contract or wallet in `daoList` array with `refAmt > 0`, if `refAmt =< 0` throw exception. Subtract `-1` from self refAmt.|
+|`remove`|line(*uint*)|Removes line number from `daoList` array. Can only be called by `owner` of contract. Used in-case of issuing a faulty *address*.|
 
 ## Read Functions
-|function|vars   |type  |
+|function|vars   |desc  |
 |--------|-------|------|
-|`owner`|account(*address*)|Shows the `owner` of the contract|
-|`daoList`|*view*|Displays the *addresses* in the `daoList` array|
+|`owner`|account(*address*)|Prints the `owner` of the contract.|
+|`daoList`|*view*|Print the *addresses* in the `daoList` array.|
