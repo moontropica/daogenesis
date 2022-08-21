@@ -38,6 +38,6 @@ To obtain a seat, a member has to be granted a referral from the wallet address 
 
 <div align="center">
 
-![index](https://user-images.githubusercontent.com/33762147/185793647-1408318b-1452-4974-abb6-ffee6f1ef91c.png)
+![index](https://user-images.githubusercontent.com/33762147/185794015-a46dc0d2-0639-4b4f-9607-28a2d8a47939.png)
 
 </div>
