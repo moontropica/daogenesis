@@ -33,3 +33,11 @@ To obtain a seat, a member has to be granted a referral from the wallet address 
 |--------|-------|------|
 |`owner`|account(*address*)|Prints the `owner` of the contract.|
 |`daoList`|*view*|Print the *addresses* in the `daoList` array.|
+
+## UI Wireframe
+
+<div align="center">
+
+![index](https://user-images.githubusercontent.com/33762147/185793647-1408318b-1452-4974-abb6-ffee6f1ef91c.png)
+
+</div>
